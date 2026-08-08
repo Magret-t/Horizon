@@ -8,8 +8,7 @@
     "max_tokens": 8192,
     "throttle_sec": 1,
     "languages": [
-      "zh",
-      "en"
+      "zh"
     ],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
@@ -28,6 +27,10 @@
       },
       "finance-news": {
         "threshold": 7.0,
+        "topic_dedup": true
+      },
+      "research": {
+        "threshold": 6.0,
         "topic_dedup": true
       }
     }
@@ -112,6 +115,209 @@
         "enabled": true,
         "category": "linux-kernel",
         "profile": "tech-news"
+      },
+      {
+        "name": "bioRxiv - Bioinformatics",
+        "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics",
+        "enabled": true,
+        "category": "preprint-bioinfo",
+        "profile": "research"
+      },
+      {
+        "name": "bioRxiv - Genomics",
+        "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=genomics",
+        "enabled": true,
+        "category": "preprint-genomics",
+        "profile": "research"
+      },
+      {
+        "name": "medRxiv - All",
+        "url": "https://connect.medrxiv.org/medrxiv_xml.php?subject=all",
+        "enabled": true,
+        "category": "preprint-medicine",
+        "profile": "research"
+      },
+      {
+        "name": "arXiv - Artificial Intelligence",
+        "url": "https://export.arxiv.org/rss/cs.AI",
+        "enabled": true,
+        "category": "arxiv-ai",
+        "profile": "research"
+      },
+      {
+        "name": "arXiv - Genomics (q-bio.GN)",
+        "url": "https://export.arxiv.org/rss/q-bio.GN",
+        "enabled": true,
+        "category": "arxiv-bioinfo",
+        "profile": "research"
+      },
+      {
+        "name": "arXiv - Quantitative Methods (q-bio.QM)",
+        "url": "https://export.arxiv.org/rss/q-bio.QM",
+        "enabled": true,
+        "category": "arxiv-bioinfo",
+        "profile": "research"
+      },
+      {
+        "name": "Nature",
+        "url": "https://www.nature.com/nature.rss",
+        "enabled": true,
+        "category": "journals-top",
+        "profile": "research"
+      },
+      {
+        "name": "Nature Medicine",
+        "url": "https://www.nature.com/nm.rss",
+        "enabled": true,
+        "category": "journals-medical",
+        "profile": "research"
+      },
+      {
+        "name": "Nature Biotechnology",
+        "url": "https://www.nature.com/nbt.rss",
+        "enabled": true,
+        "category": "journals-bio",
+        "profile": "research"
+      },
+      {
+        "name": "Nature Methods",
+        "url": "https://www.nature.com/nmeth.rss",
+        "enabled": true,
+        "category": "journals-bio",
+        "profile": "research"
+      },
+      {
+        "name": "Nature Machine Intelligence",
+        "url": "https://www.nature.com/natmachintell.rss",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "npj Digital Medicine",
+        "url": "https://www.nature.com/npjdigitalmed.rss",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "Nature Communications",
+        "url": "https://www.nature.com/ncomms.rss",
+        "enabled": true,
+        "category": "journals-top",
+        "profile": "research"
+      },
+      {
+        "name": "Science",
+        "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+        "enabled": true,
+        "category": "journals-top",
+        "profile": "research"
+      },
+      {
+        "name": "Science Robotics",
+        "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=scirobotics",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "The Lancet",
+        "url": "https://www.thelancet.com/rssfeed/lancet_current.xml",
+        "enabled": true,
+        "category": "journals-medical",
+        "profile": "research"
+      },
+      {
+        "name": "The Lancet Oncology",
+        "url": "https://www.thelancet.com/rssfeed/lanonc_current.xml",
+        "enabled": true,
+        "category": "journals-oncology",
+        "profile": "research"
+      },
+      {
+        "name": "The Lancet Digital Health",
+        "url": "https://www.thelancet.com/rssfeed/landig_current.xml",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "New England Journal of Medicine",
+        "url": "https://www.nejm.org/action/showFeed?type=etoc&feed=rss&jc=nejm",
+        "enabled": true,
+        "category": "journals-medical",
+        "profile": "research"
+      },
+      {
+        "name": "Artificial Intelligence in Medicine",
+        "url": "https://rss.sciencedirect.com/publication/science/09333657",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "Journal of Biomedical Informatics",
+        "url": "https://rss.sciencedirect.com/publication/science/15320464",
+        "enabled": true,
+        "category": "bioinformatics",
+        "profile": "research"
+      },
+      {
+        "name": "Computers in Biology and Medicine",
+        "url": "https://rss.sciencedirect.com/publication/science/00104825",
+        "enabled": true,
+        "category": "bioinformatics",
+        "profile": "research"
+      },
+      {
+        "name": "Computer Methods and Programs in Biomedicine",
+        "url": "https://rss.sciencedirect.com/publication/science/01692607",
+        "enabled": true,
+        "category": "bioinformatics",
+        "profile": "research"
+      },
+      {
+        "name": "JMIR",
+        "url": "https://www.jmir.org/feed/atom",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "JMIR AI",
+        "url": "https://ai.jmir.org/feed/atom",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "JMIR Medical Informatics",
+        "url": "https://medinform.jmir.org/feed/atom",
+        "enabled": true,
+        "category": "bioinformatics",
+        "profile": "research"
+      },
+      {
+        "name": "PLOS Computational Biology",
+        "url": "https://journals.plos.org/ploscompbiol/feed/atom",
+        "enabled": true,
+        "category": "bioinformatics",
+        "profile": "research"
+      },
+      {
+        "name": "PLOS Digital Health",
+        "url": "https://journals.plos.org/digitalhealth/feed/atom",
+        "enabled": true,
+        "category": "medical-ai",
+        "profile": "research"
+      },
+      {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/feed/",
+        "enabled": true,
+        "category": "ai-news",
+        "profile": "research"
       }
     ],
     "reddit": {
@@ -146,7 +352,10 @@
           "channel": "zaihuapd",
           "enabled": true,
           "fetch_limit": 20,
-          "profile": ["tech-news", "finance-news"]
+          "profile": [
+            "tech-news",
+            "finance-news"
+          ]
         }
       ]
     }
@@ -157,6 +366,7 @@
   "digest": {
     "max_items": null,
     "profile_order": [
+      "research",
       "tech-news",
       "tech-blog",
       "finance-news"
@@ -166,7 +376,7 @@
     "default_group_limit": null
   },
   "webhook": {
-    "enabled": true,
+    "enabled": false,
     "url_env": "HORIZON_WEBHOOK_URL",
     "delivery": "summary_and_items",
     "overview_position": "last",
