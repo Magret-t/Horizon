@@ -32,6 +32,26 @@
       "research": {
         "threshold": 6.0,
         "topic_dedup": true
+      },
+      "medicine": {
+        "threshold": 6.0,
+        "topic_dedup": true
+      },
+      "business": {
+        "threshold": 6.5,
+        "topic_dedup": true
+      },
+      "ai-skills": {
+        "threshold": 5.5,
+        "topic_dedup": true
+      },
+      "video": {
+        "threshold": 5.0,
+        "topic_dedup": true
+      },
+      "learning": {
+        "threshold": 5.0,
+        "topic_dedup": true
       }
     }
   },
@@ -250,34 +270,6 @@
         "profile": "research"
       },
       {
-        "name": "Artificial Intelligence in Medicine",
-        "url": "https://rss.sciencedirect.com/publication/science/09333657",
-        "enabled": true,
-        "category": "medical-ai",
-        "profile": "research"
-      },
-      {
-        "name": "Journal of Biomedical Informatics",
-        "url": "https://rss.sciencedirect.com/publication/science/15320464",
-        "enabled": true,
-        "category": "bioinformatics",
-        "profile": "research"
-      },
-      {
-        "name": "Computers in Biology and Medicine",
-        "url": "https://rss.sciencedirect.com/publication/science/00104825",
-        "enabled": true,
-        "category": "bioinformatics",
-        "profile": "research"
-      },
-      {
-        "name": "Computer Methods and Programs in Biomedicine",
-        "url": "https://rss.sciencedirect.com/publication/science/01692607",
-        "enabled": true,
-        "category": "bioinformatics",
-        "profile": "research"
-      },
-      {
         "name": "JMIR",
         "url": "https://www.jmir.org/feed/atom",
         "enabled": true,
@@ -318,6 +310,153 @@
         "enabled": true,
         "category": "ai-news",
         "profile": "research"
+      },
+      {
+        "name": "Nature Reviews Immunology",
+        "url": "https://www.nature.com/nri.rss",
+        "enabled": true,
+        "category": "immunology",
+        "profile": "medicine"
+      },
+      {
+        "name": "Journal of Biological Chemistry",
+        "url": "https://www.jbc.org/action/showFeed?type=etoc&feed=rss&jc=jbc",
+        "enabled": true,
+        "category": "biochemistry",
+        "profile": "medicine"
+      },
+      {
+        "name": "The Lancet Child & Adolescent Health",
+        "url": "https://www.thelancet.com/rssfeed/lanchi_current.xml",
+        "enabled": true,
+        "category": "pediatrics",
+        "profile": "medicine"
+      },
+      {
+        "name": "Product Hunt",
+        "url": "https://www.producthunt.com/feed",
+        "enabled": true,
+        "category": "product-launches",
+        "profile": "business"
+      },
+      {
+        "name": "SSPai",
+        "url": "https://sspai.com/feed",
+        "enabled": true,
+        "category": "digital-life",
+        "profile": "business"
+      },
+      {
+        "name": "Engadget",
+        "url": "https://www.engadget.com/rss.xml",
+        "enabled": true,
+        "category": "consumer-tech",
+        "profile": "business"
+      },
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/rss/",
+        "enabled": true,
+        "category": "ai-skills",
+        "profile": "ai-skills"
+      },
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "enabled": true,
+        "category": "ai-skills",
+        "profile": "ai-skills"
+      },
+      {
+        "name": "No Film School",
+        "url": "https://nofilmschool.com/rss.xml",
+        "enabled": true,
+        "category": "filmmaking",
+        "profile": "video"
+      },
+      {
+        "name": "ProVideo Coalition",
+        "url": "https://www.provideocoalition.com/feed/",
+        "enabled": true,
+        "category": "video-production",
+        "profile": "video"
+      },
+      {
+        "name": "Attack Magazine",
+        "url": "https://www.attackmagazine.com/feed/",
+        "enabled": true,
+        "category": "music-production",
+        "profile": "video"
+      },
+      {
+        "name": "IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/feeds/feed.rss",
+        "enabled": true,
+        "category": "stem-news",
+        "profile": "learning"
+      },
+      {
+        "name": "Quanta Magazine",
+        "url": "https://www.quantamagazine.org/feed/",
+        "enabled": true,
+        "category": "stem-news",
+        "profile": "learning"
+      },
+      {
+        "name": "Circulation: Arrhythmia & Electrophysiology",
+        "url": "https://www.ahajournals.org/action/showFeed?type=etoc&feed=rss&jc=circep",
+        "enabled": true,
+        "category": "electrocardiology",
+        "profile": "medicine"
+      },
+      {
+        "name": "Histopathology",
+        "url": "https://onlinelibrary.wiley.com/action/showFeed?jc=13652559&type=etoc&feed=rss2",
+        "enabled": true,
+        "category": "pathology",
+        "profile": "medicine"
+      },
+      {
+        "name": "Frontiers in Radiology",
+        "url": "https://www.frontiersin.org/journals/radiology/rss",
+        "enabled": true,
+        "category": "radiology-imaging",
+        "profile": "medicine"
+      },
+      {
+        "name": "Nature Reviews Drug Discovery",
+        "url": "https://www.nature.com/nrd.rss",
+        "enabled": true,
+        "category": "pharmacology",
+        "profile": "medicine"
+      },
+      {
+        "name": "Pediatric Research",
+        "url": "https://www.nature.com/pr.rss",
+        "enabled": true,
+        "category": "pediatrics",
+        "profile": "medicine"
+      },
+      {
+        "name": "BJOG",
+        "url": "https://obgyn.onlinelibrary.wiley.com/action/showFeed?jc=14710528&type=etoc&feed=rss2",
+        "enabled": true,
+        "category": "obstetrics-gynecology",
+        "profile": "medicine"
+      },
+      {
+        "name": "Frontiers in Medicine",
+        "url": "https://www.frontiersin.org/journals/medicine/rss",
+        "enabled": true,
+        "category": "medical-cases",
+        "profile": "medicine"
+      },
+      {
+        "name": "IELTS Liz",
+        "url": "https://ieltsliz.com/feed/",
+        "enabled": true,
+        "category": "language-learning",
+        "profile": "learning"
       }
     ],
     "reddit": {
@@ -367,7 +506,12 @@
     "max_items": null,
     "profile_order": [
       "research",
+      "medicine",
       "tech-news",
+      "ai-skills",
+      "business",
+      "video",
+      "learning",
       "tech-blog",
       "finance-news"
     ],

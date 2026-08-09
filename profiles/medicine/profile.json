@@ -1,0 +1,41 @@
+{
+  "id": "medicine",
+  "name": "Clinical Medicine Learning",
+  "display_names": {
+    "zh": "医学临床学习",
+    "en": "Clinical Medicine Learning"
+  },
+  "match": "match.md",
+  "analysis": "analysis.md",
+  "enrichment": {
+    "prompt": "enrichment.md",
+    "blocks": [
+      {
+        "id": "summary",
+        "type": "section",
+        "tools": [],
+        "primary": true
+      },
+      {
+        "id": "clinical_relevance",
+        "type": "section",
+        "tools": [],
+        "optional": true
+      },
+      {
+        "id": "background",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ],
+        "optional": true
+      },
+      {
+        "id": "community_discussion",
+        "type": "section",
+        "tools": [],
+        "optional": true
+      }
+    ]
+  }
+}

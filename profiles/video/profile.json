@@ -1,0 +1,40 @@
+{
+  "id": "video",
+  "name": "Video Editing & Music Production",
+  "display_names": {
+    "zh": "视频剪辑与音乐制作",
+    "en": "Video Editing & Music Production"
+  },
+  "match": "match.md",
+  "analysis": "analysis.md",
+  "enrichment": {
+    "prompt": "enrichment.md",
+    "blocks": [
+      {
+        "id": "summary",
+        "type": "section",
+        "tools": [],
+        "primary": true
+      },
+      {
+        "id": "background",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ]
+      },
+      {
+        "id": "impact",
+        "type": "section",
+        "tools": [],
+        "optional": true
+      },
+      {
+        "id": "community_discussion",
+        "type": "section",
+        "tools": [],
+        "optional": true
+      }
+    ]
+  }
+}
