@@ -130,13 +130,6 @@
         "profile": "tech-news"
       },
       {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": true,
-        "category": "linux-kernel",
-        "profile": "tech-news"
-      },
-      {
         "name": "bioRxiv - Bioinformatics",
         "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics",
         "enabled": true,
@@ -457,6 +450,34 @@
         "enabled": true,
         "category": "language-learning",
         "profile": "learning"
+      },
+      {
+        "name": "Google News - journal-news",
+        "url": "https://news.google.com/rss/search?q=%28%22Nature+Medicine%22+OR+%22The+Lancet%22+OR+%22New+England+Journal%22+OR+%22JAMA%22%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "journal-news",
+        "profile": "research"
+      },
+      {
+        "name": "Google News - medical-cases",
+        "url": "https://news.google.com/rss/search?q=%28%22case+report%22+medicine%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "medical-cases",
+        "profile": "medicine"
+      },
+      {
+        "name": "Google News - radiology-imaging",
+        "url": "https://news.google.com/rss/search?q=%28radiology+OR+%22medical+imaging%22+OR+MRI+OR+ultrasound%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "radiology-imaging",
+        "profile": "medicine"
+      },
+      {
+        "name": "Google News - product-launches",
+        "url": "https://news.google.com/rss/search?q=%28product+launch+OR+%22new+release%22+OR+%22startup+funding%22%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
+        "enabled": true,
+        "category": "product-launches",
+        "profile": "business"
       }
     ],
     "reddit": {
