@@ -38,7 +38,7 @@
         "topic_dedup": true
       },
       "business": {
-        "threshold": 6.5,
+        "threshold": 7.0,
         "topic_dedup": true
       },
       "ai-skills": {
@@ -134,42 +134,48 @@
         "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics",
         "enabled": true,
         "category": "preprint-bioinfo",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 20
       },
       {
         "name": "bioRxiv - Genomics",
         "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=genomics",
         "enabled": true,
         "category": "preprint-genomics",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 20
       },
       {
         "name": "medRxiv - All",
         "url": "https://connect.medrxiv.org/medrxiv_xml.php?subject=all",
         "enabled": true,
         "category": "preprint-medicine",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 20
       },
       {
         "name": "arXiv - Artificial Intelligence",
         "url": "https://export.arxiv.org/rss/cs.AI",
         "enabled": true,
         "category": "arxiv-ai",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 60
       },
       {
         "name": "arXiv - Genomics (q-bio.GN)",
         "url": "https://export.arxiv.org/rss/q-bio.GN",
         "enabled": true,
         "category": "arxiv-bioinfo",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 30
       },
       {
         "name": "arXiv - Quantitative Methods (q-bio.QM)",
         "url": "https://export.arxiv.org/rss/q-bio.QM",
         "enabled": true,
         "category": "arxiv-bioinfo",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 30
       },
       {
         "name": "Nature",
@@ -456,28 +462,32 @@
         "url": "https://news.google.com/rss/search?q=%28%22Nature+Medicine%22+OR+%22The+Lancet%22+OR+%22New+England+Journal%22+OR+%22JAMA%22%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
         "enabled": true,
         "category": "journal-news",
-        "profile": "research"
+        "profile": "research",
+        "max_items": 30
       },
       {
         "name": "Google News - medical-cases",
         "url": "https://news.google.com/rss/search?q=%28%22case+report%22+medicine%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
         "enabled": true,
         "category": "medical-cases",
-        "profile": "medicine"
+        "profile": "medicine",
+        "max_items": 20
       },
       {
         "name": "Google News - radiology-imaging",
         "url": "https://news.google.com/rss/search?q=%28radiology+OR+%22medical+imaging%22+OR+MRI+OR+ultrasound%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
         "enabled": true,
         "category": "radiology-imaging",
-        "profile": "medicine"
+        "profile": "medicine",
+        "max_items": 30
       },
       {
         "name": "Google News - product-launches",
         "url": "https://news.google.com/rss/search?q=%28product+launch+OR+%22new+release%22+OR+%22startup+funding%22%29+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen",
         "enabled": true,
         "category": "product-launches",
-        "profile": "business"
+        "profile": "business",
+        "max_items": 30
       }
     ],
     "reddit": {
@@ -524,7 +534,7 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": null,
+    "max_items": 45,
     "profile_order": [
       "research",
       "medicine",
@@ -536,9 +546,106 @@
       "tech-blog",
       "finance-news"
     ],
-    "category_groups": {},
+    "category_groups": {
+      "research-top": {
+        "name": "科研-顶级期刊",
+        "limit": 6,
+        "categories": [
+          "journals-top",
+          "journals-medical",
+          "journals-oncology",
+          "journals-bio"
+        ]
+      },
+      "research-preprint": {
+        "name": "科研-预印本",
+        "limit": 10,
+        "categories": [
+          "arxiv-ai",
+          "arxiv-bioinfo",
+          "preprint-bioinfo",
+          "preprint-genomics",
+          "preprint-medicine"
+        ]
+      },
+      "research-medai": {
+        "name": "科研-医AI与生信",
+        "limit": 6,
+        "categories": [
+          "medical-ai",
+          "bioinformatics",
+          "journal-news",
+          "ai-news"
+        ]
+      },
+      "medicine-clinical": {
+        "name": "医学-临床学习",
+        "limit": 8,
+        "categories": [
+          "medical-cases",
+          "radiology-imaging",
+          "electrocardiology",
+          "pathology",
+          "pharmacology",
+          "immunology",
+          "pediatrics",
+          "obstetrics-gynecology",
+          "biochemistry"
+        ]
+      },
+      "tech-news": {
+        "name": "科技新闻",
+        "limit": 6,
+        "categories": [
+          "ai-tools",
+          "github-trending",
+          "semiconductors",
+          "consumer-tech",
+          "digital-life"
+        ]
+      },
+      "finance": {
+        "name": "财经新闻",
+        "limit": 3,
+        "categories": [
+          "finance"
+        ]
+      },
+      "business": {
+        "name": "企业新品",
+        "limit": 3,
+        "categories": [
+          "product-launches"
+        ]
+      },
+      "ai-skills": {
+        "name": "AI 技巧",
+        "limit": 3,
+        "categories": [
+          "ai-skills",
+          "llm-inference"
+        ]
+      },
+      "video": {
+        "name": "视频创作",
+        "limit": 3,
+        "categories": [
+          "filmmaking",
+          "video-production",
+          "music-production"
+        ]
+      },
+      "learning": {
+        "name": "理工语言学习",
+        "limit": 3,
+        "categories": [
+          "stem-news",
+          "language-learning"
+        ]
+      }
+    },
     "default_group": "other",
-    "default_group_limit": null
+    "default_group_limit": 5
   },
   "webhook": {
     "enabled": false,
